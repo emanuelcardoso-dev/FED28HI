@@ -1,0 +1,60 @@
+body {
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;  
+}
+
+.yellowBox {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-container > div {
+    border: solid 1px black;
+    height: 100px;
+    background-color: gold;
+}
+
+.element-1 {
+    grid-column: 1 / span 2;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-grid-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    padding: 1em;
+    margin: 1em;
+}
+
+.flex-item {
+  background-color: teal;
+  margin: 0.5em;
+  width: 200px;
+  height: 150px;
+  margin-top: 1em;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  border: 1px solid darkblue;
+}
+
+@media (max-width: 600px) {
+    .yellowBox {
+    background-color: yellow;
+    }
+}
